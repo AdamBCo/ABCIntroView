@@ -47,7 +47,7 @@ To use the ABCIntroView please do the following:
 }
 ```
 
-If you have any questions about the project, please don't hestiate to ask.
+If you have any questions about the project, please don't hesitate to ask.
 
 Enjoy! :)
 
