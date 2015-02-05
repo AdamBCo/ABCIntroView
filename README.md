@@ -10,14 +10,17 @@ ABCIntroView is an easy to use onboarding which allows you to introduce your use
 To use the ABCIntroView please do the following:
 
 1. Add the follwing files found in the CLASSES folder to your project:
+```
         *ABCIntroView.h
         *ABCIntroView.m
+```
 
 2. Import the ABCIntoView file to your RootViewController.
 
 3. Create an ABCIntroView property and add the ABCIntroViewDelegate.
 
 4. Add the following line of code to your ViewDidLoad:
+```
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (![defaults objectForKey:@"intro_screen_viewed"]) {
         self.introView = [[ABCIntroView alloc] initWithFrame:self.view.frame];
@@ -25,8 +28,10 @@ To use the ABCIntroView please do the following:
         self.introView.backgroundColor = [UIColor greenColor];
         [self.view addSubview:self.introView];  
     }
+```
 
-5. Add the ABCIntroView Delegate Method
+5. Add the ABCIntroView Delegate Method:
+```
 #pragma mark - ABCIntroViewDelegate Methods
 
 -(void)onDoneButtonPressed{
@@ -40,6 +45,7 @@ To use the ABCIntroView please do the following:
         [self.introView removeFromSuperview];
     }];
 }
+```
 
 If you have any questions about the project, please don't hestiate to ask.
 
