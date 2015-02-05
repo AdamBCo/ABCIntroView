@@ -14,6 +14,7 @@
 		877BE6A81A83F7CE00FFCCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877BE6A71A83F7CE00FFCCFD /* Images.xcassets */; };
 		877BE6AB1A83F7CE00FFCCFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 877BE6A91A83F7CE00FFCCFD /* LaunchScreen.xib */; };
 		877BE6B71A83F7CE00FFCCFD /* ABCIntroViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 877BE6B61A83F7CE00FFCCFD /* ABCIntroViewTests.m */; };
+		877BE6C21A83F81D00FFCCFD /* ABCIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 877BE6C11A83F81D00FFCCFD /* ABCIntroView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		877BE6B01A83F7CE00FFCCFD /* ABCIntroViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABCIntroViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		877BE6B51A83F7CE00FFCCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		877BE6B61A83F7CE00FFCCFD /* ABCIntroViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCIntroViewTests.m; sourceTree = "<group>"; };
+		877BE6C01A83F81D00FFCCFD /* ABCIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCIntroView.h; sourceTree = "<group>"; };
+		877BE6C11A83F81D00FFCCFD /* ABCIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCIntroView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 			children = (
 				877BE69E1A83F7CE00FFCCFD /* AppDelegate.h */,
 				877BE69F1A83F7CE00FFCCFD /* AppDelegate.m */,
+				877BE6C31A83F8EE00FFCCFD /* Classes */,
 				877BE6A11A83F7CE00FFCCFD /* ViewController.h */,
 				877BE6A21A83F7CE00FFCCFD /* ViewController.m */,
 				877BE6A41A83F7CE00FFCCFD /* Main.storyboard */,
@@ -117,6 +121,15 @@
 				877BE6B51A83F7CE00FFCCFD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		877BE6C31A83F8EE00FFCCFD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				877BE6C01A83F81D00FFCCFD /* ABCIntroView.h */,
+				877BE6C11A83F81D00FFCCFD /* ABCIntroView.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				877BE6A31A83F7CE00FFCCFD /* ViewController.m in Sources */,
+				877BE6C21A83F81D00FFCCFD /* ABCIntroView.m in Sources */,
 				877BE6A01A83F7CE00FFCCFD /* AppDelegate.m in Sources */,
 				877BE69D1A83F7CE00FFCCFD /* main.m in Sources */,
 			);
@@ -414,6 +428,7 @@
 				877BE6BC1A83F7CE00FFCCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		877BE6BD1A83F7CE00FFCCFD /* Build configuration list for PBXNativeTarget "ABCIntroViewTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +437,7 @@
 				877BE6BF1A83F7CE00FFCCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
