@@ -10,8 +10,8 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "iTunesArtwork@2x.png"
+      "filename" : "iTunesArtwork@2x.png",
+      "scale" : "3x"
     }
   ],
   "info" : {

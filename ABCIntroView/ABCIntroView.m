@@ -27,10 +27,6 @@
     self = [super initWithFrame:frame];
     if(self){
         
-        UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:self.frame];
-        backgroundImageView.image = [UIImage imageNamed:@"Intro_Screen_Background"];
-        [self addSubview:backgroundImageView];
-        
         [self addSubview:self.scrollView];
         [self addSubview:self.pageControl];
     
@@ -64,7 +60,7 @@
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height*.05, self.frame.size.width*.8, 60)];
         titleLabel.center = CGPointMake(self.center.x, self.frame.size.height*.1);
         titleLabel.text = [NSString stringWithFormat:@"Pixifly"];
-        titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:40.0];
+        titleLabel.font = [UIFont systemFontOfSize:40.0];
         titleLabel.textColor = [UIColor whiteColor];
         titleLabel.textAlignment =  NSTextAlignmentCenter;
         titleLabel.numberOfLines = 0;
@@ -77,7 +73,7 @@
         
         UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width*.1, self.frame.size.height*.7, self.frame.size.width*.8, 60)];
         descriptionLabel.text = [NSString stringWithFormat:@"Description for First Screen."];
-        descriptionLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:18.0];
+        descriptionLabel.font = [UIFont systemFontOfSize:18.0];
         descriptionLabel.textColor = [UIColor whiteColor];
         descriptionLabel.textAlignment =  NSTextAlignmentCenter;
         descriptionLabel.numberOfLines = 0;
@@ -102,7 +98,7 @@
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height*.05, self.frame.size.width*.8, 60)];
         titleLabel.center = CGPointMake(self.center.x, self.frame.size.height*.1);
         titleLabel.text = [NSString stringWithFormat:@"DropShot"];
-        titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:40.0];
+        titleLabel.font = [UIFont systemFontOfSize:40.0];
         titleLabel.textColor = [UIColor whiteColor];
         titleLabel.textAlignment =  NSTextAlignmentCenter;
         titleLabel.numberOfLines = 0;
@@ -115,7 +111,7 @@
         
         UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width*.1, self.frame.size.height*.7, self.frame.size.width*.8, 60)];
         descriptionLabel.text = [NSString stringWithFormat:@"Description for Second Screen."];
-        descriptionLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:18.0];
+        descriptionLabel.font = [UIFont systemFontOfSize:18.0];
         descriptionLabel.textColor = [UIColor whiteColor];
         descriptionLabel.textAlignment =  NSTextAlignmentCenter;
         descriptionLabel.numberOfLines = 0;
@@ -140,7 +136,7 @@
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height*.05, self.frame.size.width*.8, 60)];
         titleLabel.center = CGPointMake(self.center.x, self.frame.size.height*.1);
         titleLabel.text = [NSString stringWithFormat:@"Shaktaya"];
-        titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:40.0];
+        titleLabel.font = [UIFont systemFontOfSize:40.0];
         titleLabel.textColor = [UIColor whiteColor];
         titleLabel.textAlignment =  NSTextAlignmentCenter;
         titleLabel.numberOfLines = 0;
@@ -154,7 +150,7 @@
         
         UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width*.1, self.frame.size.height*.7, self.frame.size.width*.8, 60)];
         descriptionLabel.text = [NSString stringWithFormat:@"Description for Third Screen."];
-        descriptionLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:18.0];
+        descriptionLabel.font = [UIFont systemFontOfSize:18.0];
         descriptionLabel.textColor = [UIColor whiteColor];
         descriptionLabel.textAlignment =  NSTextAlignmentCenter;
         descriptionLabel.numberOfLines = 0;
@@ -179,7 +175,7 @@
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height*.05, self.frame.size.width*.8, 60)];
         titleLabel.center = CGPointMake(self.center.x, self.frame.size.height*.1);
         titleLabel.text = [NSString stringWithFormat:@"Punctual"];
-        titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:40.0];
+        titleLabel.font = [UIFont systemFontOfSize:40.0];
         titleLabel.textColor = [UIColor whiteColor];
         titleLabel.textAlignment =  NSTextAlignmentCenter;
         titleLabel.numberOfLines = 0;
@@ -192,7 +188,7 @@
         
         UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width*.1, self.frame.size.height*.7, self.frame.size.width*.8, 60)];
         descriptionLabel.text = [NSString stringWithFormat:@"Description for Fourth Screen."];
-        descriptionLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:18.0];
+        descriptionLabel.font = [UIFont systemFontOfSize:18.0];
         descriptionLabel.textColor = [UIColor whiteColor];
         descriptionLabel.textAlignment =  NSTextAlignmentCenter;
         descriptionLabel.numberOfLines = 0;
@@ -220,8 +216,8 @@
 
 -(UIPageControl *)pageControl {
     if (!_pageControl) {
-        _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.frame.size.height*.8, self.frame.size.width, 10)];
-        [_pageControl setCurrentPageIndicatorTintColor:[UIColor colorWithRed:0.153 green:0.533 blue:0.796 alpha:1.000]];
+        _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.frame.size.height-80, self.frame.size.width, 10)];
+        [_pageControl setCurrentPageIndicatorTintColor:[UIColor colorWithRed:0.129 green:0.588 blue:0.953 alpha:1.000]];
         [_pageControl setNumberOfPages:4];
     }
     return _pageControl;
@@ -229,14 +225,12 @@
 
 -(UIButton *)doneButton {
     if (!_doneButton) {
-        _doneButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width*.1, self.frame.size.height*.85, self.frame.size.width*.8, 60)];
+        _doneButton = [[UIButton alloc] initWithFrame:CGRectMake(0, self.frame.size.height-60, self.frame.size.width, 60)];
         [_doneButton setTintColor:[UIColor whiteColor]];
         [_doneButton setTitle:@"Let's Go!" forState:UIControlStateNormal];
-        [_doneButton.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:18.0]];
-        [_doneButton setBackgroundColor:[UIColor colorWithRed:0.153 green:0.533 blue:0.796 alpha:1.000]];
+        [_doneButton.titleLabel setFont:[UIFont systemFontOfSize:18.0]];
+        [_doneButton setBackgroundColor:[UIColor colorWithRed:0.129 green:0.588 blue:0.953 alpha:1.000]];
         [_doneButton addTarget:self.delegate action:@selector(onDoneButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [_doneButton.layer setCornerRadius:5];
-        [_doneButton setClipsToBounds:YES];
     }
     return _doneButton;
 }

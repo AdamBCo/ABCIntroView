@@ -22,8 +22,9 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (![defaults objectForKey:@"intro_screen_viewed"]) {
         self.introView = [[ABCIntroView alloc] initWithFrame:self.view.frame];
+        
         self.introView.delegate = self;
-        self.introView.backgroundColor = [UIColor greenColor];
+        self.introView.backgroundColor = [UIColor colorWithWhite:0.149 alpha:1.000];
         [self.view addSubview:self.introView];  
     }
 }
