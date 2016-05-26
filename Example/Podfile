@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ABCIntroView_Tests' do
+  pod 'ABCIntroView', :path => '../'
+  
+  
+end

@@ -1,0 +1,14 @@
+PODS:
+  - ABCIntroView (0.1.0)
+
+DEPENDENCIES:
+  - ABCIntroView (from `../`)
+
+EXTERNAL SOURCES:
+  ABCIntroView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ABCIntroView: 9cf8cc803d632467af964a8ad1fd613e41efc872
+
+COCOAPODS: 0.39.0
