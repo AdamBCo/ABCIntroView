@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>19B7A642-29B4-48B3-834D-AEB077769003</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ABCIntroView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9E8F1E55B05E284211159EB4FDFC97684FD8A04D</key>
+		<string>https://github.com/AdamBCo/ABCIntroView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ABCIntroView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9E8F1E55B05E284211159EB4FDFC97684FD8A04D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AdamBCo/ABCIntroView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9E8F1E55B05E284211159EB4FDFC97684FD8A04D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9E8F1E55B05E284211159EB4FDFC97684FD8A04D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ABCIntroView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
