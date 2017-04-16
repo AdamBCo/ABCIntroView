@@ -32,7 +32,7 @@ To use the ABCIntroView please do the following:
 
 5. Add the ABCIntroView Delegate Method:
 ```
-#pragma mark - ABCIntroViewDelegate Methods
+# pragma mark - ABCIntroViewDelegate Methods
 
 -(void)onDoneButtonPressed{
     //    Uncomment so that the IntroView does not show after the user clicks "DONE"
